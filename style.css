@@ -35,18 +35,23 @@ body {
 .task-row-wrapper {
   display: flex;
 }
-ul {
+#completed-tasks,
+#incomplete-tasks {
   margin: 0;
   padding: 0px;
 }
-li, 
-h3 {
+.add-mode,
+.edit-mode,
+.complete-mode {
   list-style: none;
 }
-input,button{
+.task,
+.edit,
+.delete{
   outline: none;
 }
-button {
+.edit,
+.delete {
   background: none;
   border: 0px;
   color: #888;
@@ -55,7 +60,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.edit:hover {
   color: #3a3A3a;
 }
 /* Heading */
